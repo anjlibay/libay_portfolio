@@ -1,151 +1,237 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>My Website</title>
 </head>
+
 <body>
-
-    <header>
-        <div class="logo">
-            <img src="logo.png">
+  <!-- Header -->
+  <section id="header">
+    <div class="header container">
+      <div class="nav-bar">
+        <div class="brand">
+          <a href="#hero">
+            <h1><span>A</span>ngela <span>L</span>ibay</h1>
+          </a>
         </div>
-       <div class="navDiv">
-        <label for="menu">
-            <i class="fa-solid fa-bars"></i>
-        </label>
-       </div>
-        <input type="checkbox" id="menu">
-        <ul class="nav">
-            
-            <label for="menu">
-                <i class="fa-solid fa-xmark"></i>
-            </label>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#skill">Skill</a></li>
-            <li><a href="#project">Project</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </header>
-
-    <div class="container">
-        <div class="banner" id="home">
-            <div class="content">
-                <p>WELCOME TO MY PROFILE</p>
-                <h1>
-                    Hi, I'm Angela Libay <br/>
-                    a <div class="gradientText">
-                        <div class="job" data-job1="{Developer.}" data-job2="{FrondEnd.}"></div>
-                    </div>
-                </h1>
-                <p>
-                    I am a hard working, honest individual. I am a good timekeeper, always willing to learn new skills. I am friendly, helpful and polite, have a good sense of humour. I am able to work independently in busy environments and also within a team setting. I am outgoing and tactful, and able to listen effectively when solving problems.
-                </p>
-                <div class="find">
-                    <h3>FIND WITH ME</h3>
-                    <ul>
-                        <li><i class="fa-brands fa-facebook-f"></i></li>
-                        <li><i class="fa-brands fa-instagram"></i></li>
-                        <li><i class="fa-brands fa-twitter"></i></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="avatar">
-                <img src="avatar.png" alt="">
-            </div>
+        <div class="nav-list">
+          <div class="hamburger">
+            <div class="bar"></div>
+          </div>
+          <ul>
+            <li><a href="#hero" data-after="Home">Home</a></li>
+            <li><a href="#services" data-after="Service">Services</a></li>
+            <li><a href="#projects" data-after="Projects">Projects</a></li>
+            <li><a href="#about" data-after="About">About</a></li>
+            <li><a href="#contact" data-after="Contact">Contact</a></li>
+          </ul>
         </div>
-
-       <div id="skill">
-        <h1 class="title">SKILL</h1>
-        <div class="listSkill">
-            <div class="item">
-                <div class="name">HTML5</div>
-                <div class="evaluate" style="--point:80%"></div>
-            </div>
-            <div class="item">
-                <div class="name">CSS3</div>
-                <div class="evaluate" style="--point:70%"></div>
-            </div>
-            <div class="item">
-                <div class="name">Javascript</div>
-                <div class="evaluate" style="--point:80%"></div>
-            </div>
-            <div class="item">
-                <div class="name">PHP</div>
-                <div class="evaluate" style="--point:60%"></div>
-            </div>
-            <div class="item">
-                <div class="name">Laravel</div>
-                <div class="evaluate" style="--point:70%"></div>
-            </div>
-            <div class="item">
-                <div class="name">React JS</div>
-                <div class="evaluate" style="--point:90%"></div>
-            </div>
-            <div class="item">
-                <div class="name">Vue JS</div>
-                <div class="evaluate" style="--point:60%"></div>
-            </div>
-            <div class="item">
-                <div class="name">Angular JS</div>
-                <div class="evaluate" style="--point:70%"></div>
-            </div>
-        </div>
-       </div>
-       <div id="project">
-            <h1 class="title">PROJECT</h1>
-            <div class="listProject">
-                <div class="item">
-                    <img src="img1.jpg" alt="">
-                    <div class="name">
-                        Project Name 1
-                    </div>
-                </div>
-                <div class="item">
-                    <img src="img2.jpg" alt="">
-                    <div class="name">
-                        Project Name 1
-                    </div>
-                </div>
-                <div class="item">
-                    <img src="img3.jpg" alt="">
-                    <div class="name">
-                        Project Name 1
-                    </div>
-                </div>
-                <div class="item">
-                    <img src="img4.jpg" alt="">
-                    <div class="name">
-                        Project Name 1
-                    </div>
-                </div>
-                <div class="item">
-                    <img src="img5.jpg" alt="">
-                    <div class="name">
-                        Project Name 1
-                    </div>
-                </div>
-                <div class="item">
-                    <img src="img6.jpg" alt="">
-                    <div class="name">
-                        Project Name 1
-                    </div>
-                </div>
-            </div>
-       </div>
-       <div id="contact">
-        <h1 class="title">Contact</h1>
-        <ul class="contact">
-            <li><i class="fa-brands fa-facebook-f"></i></li>
-            <li><i class="fa-brands fa-instagram"></i></li>
-            <li><i class="fa-brands fa-twitter"></i></li>
-        </ul>
-       </div>
+      </div>
     </div>
-    
+  </section>
+  <!-- End Header -->
+
+
+  <!-- Hero Section  -->
+  <section id="hero">
+    <div class="hero container">
+      <div>
+        <h1>Hello, <span></span></h1>
+        <h1>My Name is <span></span></h1>
+        <h1>Angela <span></span></h1>
+        <a href="#projects" type="button" class="cta">Portfolio</a>
+      </div>
+    </div>
+  </section>
+  <!-- End Hero Section  -->
+
+  <!-- Service Section -->
+ <!-- Service Section -->
+<section id="services">
+  <div class="services container">
+    <div class="service-top">
+      <h1 class="section-title">Serv<span>i</span>ces</h1>
+      <p>Discover cutting-edge solutions in web development, IT support, and creative design. Committed to delivering exceptional results that empower your organization to thrive in today’s digital landscape.</p>
+      </div>
+    <div class="service-bottom">
+      <div class="service-item">
+        <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/services.png" /></div>
+        <h2>Web Design</h2>
+        <p>I create websites that look amazing and work flawlessly. Whether it’s a simple page or a complex site, I’ll make sure it’s responsive and user-friendly. Let’s build something that truly represents you online.</p>
+      </div>
+      <div class="service-item">
+        <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/services.png" /></div>
+        <h2>Graphics Design</h2>
+        <p>Your brand deserves to stand out, and I’m here to make that happen. From logos to marketing materials, I design visuals that tell your story. Together, we’ll create something memorable and impactful.</p>
+      </div>
+      <div class="service-item">
+        <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/services.png" /></div>
+        <h2>Video Editing</h2>
+        <p>Let me help you turn your raw footage into a story worth sharing. From editing to adding motion graphics, I’ll make your videos shine. Whether it’s for social media or a big campaign, I’ve got you covered.</p>
+      </div>
+      <div class="service-item">
+        <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/services.png" /></div>
+        <h2>Technical Support</h2>
+        <p>Tech troubles? I’ve got your back. I’ll troubleshoot, fix issues, and make sure your systems run smoothly. You can count on me to keep things up and running without the stress.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <!-- End Service Section -->
+ 
+
+  <!-- Projects Section -->
+  <section id="projects">
+    <div class="projects container">
+      <div class="projects-header">
+        <h1 class="section-title">Recent <span>Projects</span></h1>
+      </div>
+      <div class="all-projects">
+        <div class="project-item">
+          <div class="project-info">
+            <h1>Project 1</h1>
+            <h2>eSAS: Web-based Student Organization Management System</h2>
+            <p>A streamlined platform for managing student organizations, enhancing club membership processes, and improving communication between students and moderators. The system allows administrators, moderators, and students to manage club memberships, view upcoming activities, and streamline communication. It simplifies organizational workflows, making it easier to track student participation and generate reports on club performance.
+
+            </p>
+          </div>
+          <div class="project-img">
+            <img src="./img/img-1.png" alt="img">
+          </div>
+        </div>
+        <div class="project-item">
+          <div class="project-info">
+            <h1>Project 2</h1>
+            <h2>Online Event Registration System</h2>
+            <p>A web application allowing students to register and evaluate school events digitally, reducing manual work and improving data accuracy. Students can sign up for events, provide feedback, and access event information in real-time. The system reduces manual paperwork, provides organizers with detailed participant data, and offers insights through evaluation reports.</p>
+          </div>
+          <div class="project-img">
+            <img src="./img/img-1.png" alt="img">
+          </div>
+        </div>
+        <div class="project-item">
+          <div class="project-info">
+            <h1>Project 3</h1>
+            <h2>Club Membership Tracker</h2>
+            <p>A responsive system to monitor and manage club memberships, featuring real-time updates and member statistics for better organization. The system includes features like member profiles, attendance tracking, and real-time status updates. It empowers moderators to oversee membership details efficiently while offering students a transparent and accessible platform to engage with their organizations.</p>
+          </div>
+          <div class="project-img">
+            <img src="./img/img-1.png" alt="img">
+          </div>
+        </div>
+        <div class="project-item">
+          <div class="project-info">
+            <h1>Project 4</h1>
+            <h2>Interactive Student Portal</h2>
+            <p>A user-friendly portal integrating academic updates, organization activities, and event schedules in one convenient platform. Students can access academic updates, club activities, event schedules, and more from a centralized portal. The design focuses on usability and interactivity, making it a convenient tool for staying informed and connected.</p>
+          </div>
+          <div class="project-img">
+            <img src="./img/img-1.png" alt="img">
+          </div>
+        </div>
+        <div class="project-item">
+          <div class="project-info">
+            <h1>Project 5</h1>
+            <h2>Digital Certificate Generator</h2>
+            <p>A web tool to automate the creation of certificates for event participants, including personalized designs and instant downloads. Users can input participant details, select from customizable templates, and generate certificates instantly. The system reduces the time spent on manual certificate production and ensures a polished, professional result for all recipients.</p>
+          </div>
+          <div class="project-img">
+            <img src="./img/img-1.png" alt="img">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Projects Section -->
+
+  <!-- About Section -->
+<section id="about">
+  <div class="about container">
+    <div class="col-left">
+      <div class="about-img">
+        <img src="./img/img-2.png" alt="img">
+      </div>
+    </div>
+    <div class="col-right">
+      <h1 class="section-title">About <span>me</span></h1>
+      <h2>Front End Developer</h2>
+      <p>Hi, I’m Angela Libay, a 23-year-old BSIT student at Northern Bukidnon State College, passionate about web development and innovative solutions. I’m leading a capstone project, eSAS, a web-based system for managing student organizations. Skilled in HTML, CSS, JavaScript, Python, and UI/UX design, I aim to create impactful, user-focused applications. Outside coding, I explore new tech, join student events, or enjoy a good book.</p>
+      <a href="./resume/Angela_Libay_Resume.pdf" class="cta" download="Angela_Libay_Resume.pdf">Download Resume</a>
+</div>
+  </div>
+</section>
+<!-- End About Section -->
+
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <div class="contact container">
+      <div>
+        <h1 class="section-title">Contact <span>info</span></h1>
+      </div>
+      <div class="contact-items">
+        <div class="contact-item">
+          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/phone.png" /></div>
+          <div class="contact-info">
+            <h1>Phone</h1>
+            <h2>+63 952 522 6779</h2>
+            <h2>+1 234 123 1234</h2>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/new-post.png" /></div>
+          <div class="contact-info">
+            <h1>Email</h1>
+            <h2>libay.angela01@gmail.com</h2>
+            <h2>abcd@gmail.com</h2>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/map-marker.png" /></div>
+          <div class="contact-info">
+            <h1>Address</h1>
+            <h2>Damilag, Manolo Fortich, Bukidnon</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Contact Section -->
+
+  <!-- Footer -->
+  <section id="footer">
+    <div class="footer container">
+      <div class="brand">
+        <h1><span>A</span>ngela <span>L</span>ibay</h1>
+      </div>
+      <h2>Your Complete Web Solution</h2>
+      <div class="social-icon">
+        <div class="social-item">
+          <a href="https://www.facebook.com/angela.libay.900079/" target="_blank">
+            <img src="https://img.icons8.com/bubbles/100/000000/facebook-new.png" />
+          </a>
+        </div>
+        <div class="social-item">
+          <a href="https://www.instagram.com/angela.libay/" target="_blank">
+            <img src="https://img.icons8.com/bubbles/100/000000/instagram-new.png" />
+          </a>
+        </div>
+        <div class="social-item">
+          <a href="https://www.behance.net" target="_blank">
+            <img src="https://img.icons8.com/bubbles/100/000000/behance.png" />
+          </a>
+        </div>        
+      </div>
+      <p>Copyright © 2025 . All rights reserved</p>
+    </div>
+  </section>
+  <!-- End Footer -->
+  <script src="./app.js"></script>
 </body>
+
 </html>
